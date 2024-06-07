@@ -7,12 +7,12 @@ const AllocationForm = (props) => {
     const [name, setName] = useState('');
     const [cost, setCost] = useState('');
     const [action, setAction] = useState('');
-    const [currency, setCurrency] = useState('');
+    const {currency} = useContext(AppContext);
 
     const submitEvent = () => {
 
             if(cost > remaining) {
-                setCurrency("£");
+                //setCurrency("£");
                 alert("The value cannot exceed remaining funds " + currency + remaining);
                 setCost("");
                 return;
