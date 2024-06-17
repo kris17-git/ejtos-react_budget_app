@@ -26,7 +26,7 @@ const Currency = () => {
         setAction("Change_curr");
         submitEvent2(event.target.value);
     }}>
-        <option defaultValue>Currency (£ Pound)</option>
+        <option value="" disabled selected>Currency (£ Pound)</option>
         <option value="£" name="Change_curr">£ Pound</option>
         <option value="$" name="Change_curr">$ Dollar</option>
         <option value="€" name="Change_curr">€ Euro</option>
